@@ -7,16 +7,28 @@ Dependent variable: hours absent from work
 Independent variables:
 
 Reason for absence
+
 Month
+
 Day of the week
+
 Transportation expense
+
 Distance to work
+
 Age
+
 Daily work load
+
 BMI
+
 Children
+
 Pets
+
 Education
+
+
 #Data pre-processing: MySQL Python Tableau_data preprocessing.ipynb
 
 #Model selection: MySQL Python Tableau_model selection.ipynb
