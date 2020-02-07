@@ -4,7 +4,9 @@ BUSINESS PROBLEM: explore whether a person presenting certain characteristics is
 
 MODEL: Logistic regression
 
-#Data pre-processing: Absenteeism_data.xlsx in MySQL Python Tableau_data preprocessing.ipynb
+
+#Data pre-processing: 
+"Absenteeism_data.xlsx" in "MySQL Python Tableau_data preprocessing.ipynb"
 
 Dependent variable: 
 - Hours absent from work: median = 3 hours, therefore >3hours and <3hours are the target variables
@@ -22,7 +24,9 @@ Independent variables:
 - Pets
 - Education
 
-#Model creation:  Absenteeism_preprocessed.xlsx in MySQL Python Tableau_model selection.ipynb
+
+#Model creation:  
+"Absenteeism_preprocessed.xlsx" in "MySQL Python Tableau_model selection.ipynb"
 
 
 Standardise input variables:
@@ -42,19 +46,19 @@ The ‘Reason’ variables seem to have a lot of influence on absenteeism.
 
 Decide which variables are important to use in the model: remove variables which have close to no contribution to the model using Backward elimination
 
-
-#Model testing
-
+Model testing:
 The goal is to not adjust the model any further.
 The result indicates how often (% accuracy) the model will predict the level of absenteeism correctly. If the test result was 10-20% less than the trained model, then the model is overfitted and will fail in real life.  
 
 Probability estimates indicate, per record, the probability of resulting in “0 (<3 hours)” or “1 (>3 hours)”. If probability is <0.5, then “0 (<3 hours)” result, if >0.5 then a “1 (>3 hours)”.
 
+
 #Save the model 
 
-The model and the scaler (used to standardise all new data with the same method) saved using ‘pickle’
+The "model" and the "scaler" (used to standardise all new data with the same method) saved using ‘pickle’
 
-#Load the model to run on new data - Absenteeism_new_data.xlsx in Absenteeism_test_model.ipynb
+#Load the model to run on new data:
+"Absenteeism_new_data.xlsx" in "Absenteeism_test_model.ipynb"
 
 
 #Plotting in Tableau Public:
