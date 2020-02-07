@@ -2,7 +2,7 @@ Udemy course: Python+SQL+Tableau: Integration Python, SQL and Tableau.
 
 BUSINESS PROBLEM: explore whether a person presenting certain characteristics is expected to be away from work at some point in time or not.
 
-Model: Logistic regression
+MODEL: Logistic regression
 
 #Data pre-processing: Absenteeism_data.xlsx in MySQL Python Tableau_data preprocessing.ipynb
 
@@ -24,6 +24,7 @@ Independent variables:
 
 #Model creation:  Absenteeism_preprocessed.xlsx in MySQL Python Tableau_model selection.ipynb
 
+
 Standardise input variables:
 For a data set to be comparable with other datasets/new data, make sure the data has the same content and format as others (e.g. comparing percentage values instead of actual values). It gives each data point and the dataset greater meaning.
 Do not standardise variables that have dummy values.
@@ -43,17 +44,21 @@ Decide which variables are important to use in the model: remove variables which
 
 
 #Model testing
+
 The goal is to not adjust the model any further.
 The result indicates how often (% accuracy) the model will predict the level of absenteeism correctly. If the test result was 10-20% less than the trained model, then the model is overfitted and will fail in real life.  
 
 Probability estimates indicate, per record, the probability of resulting in “0 (<3 hours)” or “1 (>3 hours)”. If probability is <0.5, then “0 (<3 hours)” result, if >0.5 then a “1 (>3 hours)”.
 
 #Save the model 
+
 The model and the scaler (used to standardise all new data with the same method) saved using ‘pickle’
 
 #Load the model to run on new data - Absenteeism_new_data.xlsx in Absenteeism_test_model.ipynb
 
+
 #Plotting in Tableau Public:
+
 
 https://public.tableau.com/profile/wendy8335#!/vizhome/Absenteeismofemployees/Dashboard2
 
