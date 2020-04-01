@@ -12,7 +12,7 @@ Data pre-processing files:
 
 • SA1 SAold2 combined cleaning.csv (Phase 1,2,3,3_1)
 
-• Turtle bycatch prediction EDA.ipynb
+• Turtle bycatch prediction EDA and CART.ipynb
 
 
 Dependent variable: the catches per set must be comparable so measured in number of turtles caught/1000 hooks. • Catch records for Green, Hawksbill, Olive Ridley, Leatherback, Loggerhead, Turtle (Marine (unid) turtles). (i) Total number and (ii) CPUE calculated as no./1000 hooks
@@ -114,6 +114,13 @@ Plots:
 
 
 ===========================================================================
+
+Model running files:
+
+• turtle_data_ready.csv
+
+• Turtle bycatch prediction EDA and CART.ipynb
+
 
 Final independent variables: 
 
